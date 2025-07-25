@@ -1,0 +1,10 @@
+In this experiment, I learned how to make a simple HTML form.
+I added fields for name, email, and age.
+
+I also learned how to use HTML to check the inputs like:
+
+Name only letters (max 50 characters) uppercase, lowercase characters and max 50 characters only.
+Email in correct format that is contaning '@' and proper mail domain.
+Age only 1–99
+
+This taught me how to make forms work properly on a website.
