@@ -1,18 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ProductCard from './components/ProductCard'
+import React from "react";
+import ProductCard from "./components/ProductCard.jsx";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const products = [
+    { name: "Wireless Mouse", price: "25.99", status: "In Stock" },
+    { name: "Keyboard", price: "45.5", status: "Out of Stock" },
+    { name: "Monitor", price: "199.99", status: "In Stock" },
+  ];
 
   return (
-    <>
-      
-      <ProductCard />
-      </> 
-  )
+    <div style={styles.container}>
+      <h1 style={styles.title}>Products List</h1>
+      <div style={styles.cardContainer}>
+        {products.map((product, index) => (
+          <ProductCard
+            key={index}
+            name={product.name}
+            price={product.price}
+            status={product.status}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default App
+const styles = {
+  container: {
+    border: "1px solid #333",
+    padding: "20px",
+    display: "inline-block",
+  },
+  title: {
+    textAlign: "center",
+    marginBottom: "20px",
+  },
+  cardContainer: {
+    display: "flex",
+    gap: "20px",
+    justifyContent: "center",
+  },
+};
+
+export default App;
