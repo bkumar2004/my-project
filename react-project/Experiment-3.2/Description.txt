@@ -1,0 +1,41 @@
+Experiment Description
+In this experiment, I developed a small React project to demonstrate the use of state management, event handling, and dynamic rendering—core concepts for building interactive React applications.
+
+The project was structured with only two main files inside the src folder:
+- App.js – the parent component that renders the interface and imports the child component.
+- BookManager.js – the main logic component that handles book data, search, add, and remove functionality.
+
+Working of App.js
+The App.js file serves as the entry point of the application and sets up the overall layout.
+- It begins by importing React and the BookManager component.
+- A simple heading is displayed to label the interface as “Library Management”.
+- The BookManager component is rendered inside the main layout, encapsulating all the logic and UI interactions.
+
+This separation ensures that the parent component remains clean and focused on layout, while the child handles all dynamic behavior.
+Main concepts used:
+• Component import and rendering
+• Functional component structure
+• Separation of layout and logic
+
+Working of BookManager.js
+The BookManager.js file defines the interactive logic and UI for managing the book list.
+- It uses useState to manage three pieces of state: the book list, the search term, and the new book input.
+- A static array of books is initialized with sample data (title and author).
+- The search input filters books in real-time using .filter() and .includes() based on title or author.
+- The add book form uses controlled inputs and updates the book list dynamically via setBooks.
+- Each book entry includes a “Remove” button that deletes the book from the list using .filter() and index matching.
+- Inline styling is applied for layout clarity and spacing.
+
+Main concepts used:
+• React useState for state management
+• Controlled form inputs
+• Array iteration and filtering with .map() and .filter()
+• Event handling for search, add, and remove actions
+• JSX for dynamic rendering
+• Inline styling with JavaScript objects
+
+Outcome of the Experiment
+- Successfully implemented dynamic UI updates using React state.
+- Demonstrated real-time filtering and list manipulation without page reloads.
+- Practiced key React concepts like state hooks, controlled inputs, event handling, and conditional rendering.
+- Reinforced the importance of separating layout (App.js) and logic (BookManager.js) for cleaner architecture.
