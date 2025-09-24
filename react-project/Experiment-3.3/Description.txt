@@ -1,0 +1,35 @@
+Experiment Description
+In this experiment, I developed a small React project to demonstrate the concept of inheritance using ES6 classes inside React components. The experiment highlights object-oriented programming principles such as class creation, subclass extension, and method overriding, while also showing how these concepts can be integrated into a ReactJS application.
+
+The project was structured with two main files inside the src folder:
+- App.js – the parent component that renders the layout and imports the PersonManager component.
+- PersonManager.js – the main logic component that defines Person, Student, and Teacher classes, creates their instances, and dynamically renders their information.
+Working of App.js
+The App.js file serves as the entry point of the application and sets up the overall layout.
+- It begins by importing React and the PersonManager component.
+- A simple heading is displayed to label the interface as “Person Class Hierarchy”.
+- The PersonManager component is rendered inside the main layout, encapsulating all the logic and UI interactions.
+
+This ensures that the parent component remains clean and focused on layout, while the child component demonstrates the class hierarchy and rendering.
+Main concepts used:
+• Component import and rendering
+• Functional component structure
+• Separation of layout and logic
+Working of PersonManager.js
+The PersonManager.js file defines the logic and rendering for the Person class hierarchy.
+- A Person base class is created with name and age properties, along with a method getInfo() to display details.
+- A Student subclass extends Person, adding a course property and overriding getInfo() to include course details.
+- A Teacher subclass extends Person, adding a subject property and overriding getInfo() to include subject details.
+- Instances of Student and Teacher are created and stored in an array.
+- Using React’s JSX and .map(), each instance’s information is displayed dynamically on the UI.
+Main concepts used:
+• ES6 classes and inheritance
+• Method overriding in subclasses
+• Object creation and instance handling
+• React dynamic rendering using .map()
+• Separation of class logic from React layout
+Outcome of the Experiment
+- Successfully demonstrated the concept of inheritance and subclassing in JavaScript ES6 classes.
+- Implemented method overriding and extension of base class properties in Student and Teacher subclasses.
+- Integrated object-oriented programming concepts within a ReactJS component.
+- Reinforced the importance of separating layout (App.js) and logic (PersonManager.js) for better maintainability.
